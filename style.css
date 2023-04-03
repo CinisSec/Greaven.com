@@ -1,6 +1,6 @@
 body {
     max-width: max-content;
-    margin: auto;
+    margin:auto;
     }
 
 #body {
@@ -22,11 +22,20 @@ body {
     border-color: black;
     padding-top: 5px;
     padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 5px;
 }
 
-.content {
+.blogpost-text{
+    text-align: justify;
+}
+.blogpost {
     padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content{
+    padding-left: 5px;
     padding-right: 10px;
 }
 
