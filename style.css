@@ -39,6 +39,11 @@ body {
     padding-right: 10px;
 }
 
+.tableformat{
+    text-align: left; 
+    padding-left: 0px;
+}
+
 #support {
     border-style: solid;
     border-color: black;
