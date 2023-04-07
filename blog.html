@@ -36,11 +36,11 @@
                 </code>
                 So here we will demonstrate how to format and partition <b>sda</b>.<br>
                 <br>
-                First you'll have to pick a partition standard. <br>
-                You can choose between MBR and GPT. MBR is more backwards compatible<br>
-                but has a limit of 2TB and 4 main partitions. GPT is built differently and <br>
-                supports quite a bit more. I won't go in detail here, but you can generally<br>
-                use GPT for most modern systems.<br>
+                First you'll have to pick a partition standard. You can choose between<br>
+                MBR and GPT. MBR is more backwards compatible but has a limit of 2TB<br>
+                and 4 main partitions. GPT is built differently and supports quite a bit more.<br>
+                I won't go in detail here, but you can generally use GPT for most modern systems.
+                <br>
                 <br>
                 GPT:
                 <code>parted /dev/sda mklabel gpt</code>
