@@ -18,6 +18,81 @@
             -
             <a href="https://github.com/CinisSec" target="_blank">Github</a>
         </div>
+        <div id="blogpost-3" class="blogpost">
+            <h3>Format and partition a drive on Linux</h3>
+            <h5>07-04-2023</h5>
+            <p class="blogpost-text">
+                Hey there so formatting drives on linux looks pretty scary but it's not <br>
+                that bad. As long as you understand what you're doing!<br>
+                <br>
+                First you'll need to list the available block devices with lsblk:
+                <code>lsblk</code>
+                Output:
+                <code>
+                NAME&nbsp;&nbsp;&nbsp;MAJ:MIN&nbsp;&nbsp;RM&nbsp;SIZE&nbsp;RO&nbsp;TYPE MOUNTPOINT<br>
+                sda&nbsp;&nbsp;&nbsp;&nbsp;8:0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;100G&nbsp;0&nbsp;&nbsp;disk <br>   
+                sdb&nbsp;&nbsp;&nbsp;&nbsp;8:16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;30G&nbsp;&nbsp;0&nbsp;&nbsp;disk  <br>
+                └─sdb1&nbsp;8:17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;30G&nbsp;&nbsp;0&nbsp;&nbsp;part&nbsp;/<br>
+                </code>
+                So here we will demonstrate how to format and partition <b>sda</b>.<br>
+                <br>
+                First you'll have to pick a partition standard. <br>
+                You can choose between MBR and GPT. MBR is more backwards compatible<br>
+                but has a limit of 2TB and 4 main partitions. GPT is built differently and <br>
+                supports quite a bit more. I won't go in detail here, but you can generally<br>
+                use GPT for most modern systems.<br>
+                <br>
+                GPT:
+                <code>parted /dev/sda mklabel gpt</code>
+                MBR:
+                <code>parted /dev/sda mklabel msdos</code>
+                Now we can create a new partition on <b>sda</b> using parted. For compatibility's<br>
+                sake we will use <b>ntfs</b> instead of the standard <b>ext4</b>. This will ensure<br>
+                that our drive is operational on windows too.<br>
+                <br>
+                Partitioning:
+                <code>
+                    parted -a opt /dev/sda mkpart primary ntfs 0% 100%
+                </code>
+                <ul>
+                    <li><b>-a opt</b> tells parted to use optimal alignment</li>
+                    <li><b>/dev/sda</b> is the target we want to partition</li>
+                    <li><b>mkpart</b> to make a partition</li>
+                    <li><b>primary</b> we want to make a new primary partition</li>
+                    <li><b>ntfs</b> is the filesystem we want to use</li>
+                    <li><b>0%</b> is the start of our partition, meaning the beginning of the physical drive</li>
+                    <li><b>100%</b> is the end of our partition, meaning the end of the physical drive</li>
+                </ul>
+                If you do lsblk again you will see that a new partition has been created.
+                <code>
+                    NAME&nbsp;&nbsp;&nbsp;MAJ:MIN&nbsp;&nbsp;RM&nbsp;SIZE&nbsp;RO&nbsp;TYPE MOUNTPOINT<br>
+                    sda&nbsp;&nbsp;&nbsp;&nbsp;8:0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;100G&nbsp;0&nbsp;&nbsp;disk <br>   
+                    └─sda1&nbsp;8:1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;100G&nbsp;0&nbsp;&nbsp;part&nbsp;/<br>
+                    sdb&nbsp;&nbsp;&nbsp;&nbsp;8:16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;30G&nbsp;&nbsp;0&nbsp;&nbsp;disk  <br>
+                    └─sdb1&nbsp;8:17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;30G&nbsp;&nbsp;0&nbsp;&nbsp;part&nbsp;/<br>
+                </code>
+                Now all that is left to do is to create a filesystem on the newly made partition.<br>
+                <code>
+                    mkfs.ntfs -f -L partition_name /dev/sda1
+                </code>
+                <ul>
+                    <li><b>-f</b> is used for quick format, otherwise it'll zero wipe the partition first</li>
+                    <li><b>-L</b> is used to give a label to the partition, this it particularly useful if you want to be able to identify it for a specific use</li>
+                    <li><b>partition_name</b> is the name of the label</li>
+                    <li><b>/dev/sda1</b> is our target</li>
+                </ul>
+                And you're done!<br>
+                You can start mounting the partition and enjoy your drive. \(^o^)/ <br>
+                <code>mount /dev/sda1 /somewhere/on/your/machine</code>
+                <br>
+                I hope this helped!<br>
+                <br>
+                xoxo<br>
+                Grey
+            </p>
+        </div>
+        <br>
+        <hr>
         <div id="blogpost-2" class="blogpost">
             <h3>"Open sourcing" this website</h3>
             <h5>06-04-2023</h5>
@@ -30,15 +105,15 @@
                 So I thought it might be a good idea to share the code. <br>
                 <br>
                 This website isn't anything fancy though. Don't expect anything complex. <br>
-                But I hope it will inspire other people to start coding! <br> 
-                You can find my code here: <a href="https://github.com/CinisSec/AragamiSoft">github.com/cinissec/aragamisoft</a><br>
+                But I hope it will inspire other people to start coding! <br>
+                You can find my code here: <a
+                    href="https://github.com/CinisSec/AragamiSoft">github.com/cinissec/aragamisoft</a><br>
                 <br>
                 Hope you enjoy it!<br>
                 <br>
                 xoxo<br>
                 Grey
             </p>
-
         </div>
         <br>
         <hr>
