@@ -23,7 +23,8 @@
             <h5>07-04-2023</h5>
             <p class="blogpost-text">
                 Hey there so formatting drives on linux looks pretty scary but it's not <br>
-                that bad. As long as you understand what you're doing!<br>
+                that bad. As long as you understand what you're doing! I want to remind you<br> 
+                that all these commands require <b>root</b> access. <br>
                 <br>
                 First you'll need to list the available block devices with lsblk:
                 <code>lsblk</code>
@@ -63,6 +64,11 @@
                     <li><b>0%</b> is the start of our partition, meaning the beginning of the physical drive</li>
                     <li><b>100%</b> is the end of our partition, meaning the end of the physical drive</li>
                 </ul>
+                By default, <b>parted</b> uses cylinder alignment, which can result in suboptimal<br> 
+                alignment and reduced performance. Using the parted -a opt option ensures<br> 
+                that your partitions are optimally aligned for your specific disk and can improve<br> 
+                your disk's performance.<br>
+                <br>
                 If you do <b>lsblk</b> again you will see that a new partition has been created.
                 <br>
                 <br>
