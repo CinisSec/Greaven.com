@@ -24,11 +24,11 @@ body {
     padding-bottom: 3px;
     margin-bottom: 5px;
 }
-table {
+.sortable {
     margin: 0 auto;
     padding: 10px;
   }
-table td {
+.sortable td {
     padding: 5px;
     outline: solid 0.5px;
 }
