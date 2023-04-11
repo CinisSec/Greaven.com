@@ -4,9 +4,15 @@ body {
     }
 
 #body {
-    max-width: 550px;
+    max-width: 1080px;
+    min-width: 550px;
     padding-bottom: 10px;
     width: fit-content;
+    border-color: grey;
+    border-style: solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
 }
 #title {
     padding-left: 5px;
@@ -21,8 +27,12 @@ body {
     border-color: black;
     padding-top: 0px;
     padding-left: 2px;
+    padding-right: 2px;
     padding-bottom: 3px;
-    margin-bottom: 5px;
+
+    text-align: center;
+    margin: auto;
+    width: fit-content;
 }
 .sortable {
     margin: 0 auto;
@@ -50,7 +60,7 @@ body {
     border-color: black;
     text-align: center;
     width: fit-content;
-    margin-top: 10px;
+    margin-top: 20px;
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
