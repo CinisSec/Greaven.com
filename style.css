@@ -1,7 +1,7 @@
 body {
+    overflow-y: scroll;
     max-width: max-content;
     margin:auto;
-    min-height: 1080px;
     }
 
 #body {
@@ -43,11 +43,10 @@ body {
 }
 .blogpost {
     margin: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
     border-color: grey;
     border-style: solid;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .content{
