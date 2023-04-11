@@ -22,9 +22,10 @@
             <h3>Format and partition a drive on Linux</h3>
             <h5>07-04-2023</h5>
             <p class="blogpost-text">
-                Hey there so formatting drives on linux looks pretty scary but it's not <br>
-                that bad. As long as you understand what you're doing! I want to remind you<br>
-                that all these commands require <b>root</b> access. <br>
+                Hey there so formatting drives on linux looks pretty scary but it's not
+                that bad. As long as you understand what you're doing! I want to remind you
+                that all these commands require <b>root</b> access.
+                <br>
                 <br>
                 First you'll need to list the available block devices with lsblk:
                 <code>lsblk</code>
@@ -35,11 +36,12 @@
                 sdb&nbsp;&nbsp;&nbsp;&nbsp;8:16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;30G&nbsp;&nbsp;0&nbsp;&nbsp;disk  <br>
                 sdb1&nbsp;&nbsp;&nbsp;8:17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;30G&nbsp;&nbsp;0&nbsp;&nbsp;part&nbsp;/<br>
                 </code>
-                So here we will demonstrate how to format and partition <b>sda</b>.<br>
+                So here we will demonstrate how to format and partition <b>sda</b>.
                 <br>
-                First you'll have to pick a partition standard. You can choose between<br>
-                MBR and GPT. MBR is more backwards compatible but has a limit of 2TB<br>
-                and 4 main partitions. GPT is built differently and supports quite a bit more.<br>
+                <br>
+                First you'll have to pick a partition standard. You can choose between
+                MBR and GPT. MBR is more backwards compatible but has a limit of 2TB
+                and 4 main partitions. GPT is built differently and supports quite a bit more.
                 I won't go in detail here, but you can generally use GPT for most modern systems.
                 <br>
                 <br>
@@ -47,8 +49,8 @@
                 <code>parted /dev/sda mklabel gpt</code>
                 MBR:
                 <code>parted /dev/sda mklabel msdos</code>
-                Now we can create a new partition on <b>sda</b> using parted. For compatibility's<br>
-                sake we will use <b>ntfs</b> instead of the standard <b>ext4</b>. This will ensure<br>
+                Now we can create a new partition on <b>sda</b> using parted. For compatibility's
+                sake we will use <b>ntfs</b> instead of the standard <b>ext4</b>. This will ensure
                 that our drive is operational on windows too.<br>
                 <br>
                 Partitioning:
@@ -64,10 +66,10 @@
                 <li><b>0%</b> is the start of our partition, meaning the beginning of the physical drive</li>
                 <li><b>100%</b> is the end of our partition, meaning the end of the physical drive</li>
             </ul>
-            By default, <b>parted</b> uses cylinder alignment, which can result in suboptimal<br>
-            alignment and reduced performance. Using the parted -a opt option ensures<br>
-            that your partitions are optimally aligned for your specific disk and can improve<br>
-            your disk's performance.<br>
+            By default, <b>parted</b> uses cylinder alignment, which can result in suboptimal 
+            alignment and reduced performance. Using the parted -a opt option ensures
+            that your partitions are optimally aligned for your specific disk and can improve
+            your disk's performance.
             <br>
             If you do <b>lsblk</b> again you will see that a new partition has been created.
             <br>
@@ -80,7 +82,7 @@
                     sdb&nbsp;&nbsp;&nbsp;&nbsp;8:16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;30G&nbsp;&nbsp;0&nbsp;&nbsp;disk  <br>
                     sdb1&nbsp;&nbsp;&nbsp;8:17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;30G&nbsp;&nbsp;0&nbsp;&nbsp;part&nbsp;/<br>
                 </code>
-            Now all that is left to do is to create a filesystem on the newly made partition.<br>
+            Now all that is left to do is to create a filesystem on the newly made partition.
             <code>
                     mkfs.ntfs -f -L partition_name /dev/sda1
                 </code>
@@ -90,8 +92,8 @@
                 <li><b>partition_name</b> is the name of the label</li>
                 <li><b>/dev/sda1</b> is our target</li>
             </ul>
-            And you're done!<br>
-            You can start mounting the partition and enjoy your drive. \(^o^)/ <br>
+            And you're done!
+            You can start mounting the partition and enjoy your drive. \(^o^)/
             <code>mount /dev/sda1 /somewhere/on/your/machine</code>
             <br>
             I hope this helped!<br>

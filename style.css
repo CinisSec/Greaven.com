@@ -4,7 +4,7 @@ body {
     }
 
 #body {
-    
+    max-width: 550px;
     padding-bottom: 10px;
     width: fit-content;
 }
@@ -66,6 +66,6 @@ code {
 	background-color: #141414;
 	color: white;
 	display: block;
-	border-radius: 10px;
+    border-radius: 10px;
 	text-shadow: 5px 5px 5px black, -2px -2px 2px #212121;
 }
