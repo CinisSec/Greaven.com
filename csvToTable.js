@@ -86,11 +86,14 @@ Valkyria Chronicles 2,PSP,To do
 Final Fantasy Tactics: War of the Lions,PSP,To do`;
 
 const csvmodelkits = `
-fruit,quantity,price
-Apple,10,1.5
-Orange,20,2.0
-Banana,30,1.0
-`;
+Model,Manufacturer,Status
+Alteisen,Bandai,In progress
+30Min Sister: Tiasha,Bandai,In progress
+Omnimon Amplified,Bandai,In progress
+MechatroWeGo Cream Soda & Crystal Gold,Hasegawa,In progress
+MechatroWeGo Asuka,Hasegawa,In progress
+RG EVA01,Bandai,To do
+Dukemon Amplified,Bandai,To do`;
 
 function csvToTable(csv) {
     const rows = csv.split('\n');
@@ -113,8 +116,8 @@ function csvToTable(csv) {
 
 const table2 = csvToTable(csvbooks);
 const table3 = csvToTable(csvgames);
-/* const table4 = csvToTable(csvmodelkits); */
+const table4 = csvToTable(csvmodelkits);
 
 document.getElementById('booksbacklog').innerHTML = table2;
 document.getElementById('gamesbacklog').innerHTML = table3;
-/* document.getElementById('modelkitsbacklog').innerHTML = table4; */
+document.getElementById('modelkitsbacklog').innerHTML = table4;
