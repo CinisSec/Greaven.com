@@ -81,7 +81,7 @@ Tales of Abyss,PS2,To do
 Persona 1,PSP,To do
 Persona 2: Innocent Sin,PSP,To do
 Persona 2: Eternal Punishment,PSP,To do
-Tactics Ogre: Let Us Clinkg Together,PSP/Switch,To do
+Tactics Ogre: Let Us Cling Together,PSP/Switch,To do
 Valkyria Chronicles 2,PSP,To do
 Final Fantasy Tactics: War of the Lions,PSP,To do`;
 
