@@ -22,9 +22,9 @@
             <h3>Format and partition a drive on Linux</h3>
             <h5>07-04-2023</h5>
             <p class="blogpost-text">
-                Hey there so formatting drives on linux looks pretty scary but it's not
-                that bad. As long as you understand what you're doing! I want to remind you
-                that all these commands require <b>root</b> access.
+                Hey there so formatting drives on linux, it may sound pretty scary but it is not
+                that bad. As long as you understand what you're doing! <br> 
+                I want to remind you that all these commands require <b>root</b> access.
                 <br>
                 <br>
                 First you'll need to list the available block devices with lsblk:
@@ -40,8 +40,10 @@
                 <br>
                 <br>
                 First you'll have to pick a partition standard. You can choose between
-                MBR and GPT. MBR is more backwards compatible but has a limit of 2TB
-                and 4 main partitions. GPT is built differently and supports quite a bit more.
+                MBR and GPT.  <br>
+                MBR is more backwards compatible but has a limit of 2TB
+                and 4 main partitions. <br> 
+                GPT is built differently and supports quite a bit more.
                 I won't go in detail here, but you can generally use GPT for most modern systems.
                 <br>
                 <br>
@@ -50,7 +52,7 @@
                 MBR:
                 <code>parted /dev/sda mklabel msdos</code>
                 Now we can create a new partition on <b>sda</b> using parted. For compatibility's
-                sake we will use <b>ntfs</b> instead of the standard <b>ext4</b>. This will ensure
+                sake we will use <b>ntfs</b> instead of the standard <b>ext4</b>. <br> This will ensure
                 that our drive is operational on windows too.<br>
                 <br>
                 Partitioning:
@@ -67,8 +69,8 @@
                 <li><b>100%</b> is the end of our partition, meaning the end of the physical drive</li>
             </ul>
             By default, <b>parted</b> uses cylinder alignment, which can result in suboptimal 
-            alignment and reduced performance. Using the parted -a opt option ensures
-            that your partitions are optimally aligned for your specific disk and can improve
+            alignment and reduced performance. <br> 
+            Using the parted -a opt option ensures that your partitions are optimally aligned for your specific disk and can improve
             your disk's performance.
             <br>
             If you do <b>lsblk</b> again you will see that a new partition has been created.
