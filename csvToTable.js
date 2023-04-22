@@ -1,7 +1,8 @@
+/* const csvwishlist = ``; */
+
 const csvbooks = `
 Title,Author,Status
 Mo Dao Zu Shi 1,Mo Xiang Xiu, In progress
-Charles de Gaulle, Philippe Barres, In progress
 Mo Dao Zu Shi 2,Mo Xiang Xiu, To do
 Mo Dao Zu Shi 3,Mo Xiang Xiu, To do`;
 
@@ -10,7 +11,7 @@ Title,Platform,Status
 Xenoblade Chronicles 3,Switch,In progress
 Atelier Escha & Logy,Steamdeck,In progress
 Monster Hunter Rise: Sunbreak,Switch,In progress
-Robolife days with Aino,Steamdeck,In progress
+Advance wars,Gameboy Advance,In Progress
 Trials of Mana,Steamdeck,On hold
 Sengoku Rance,Steamdeck,On hold
 Dohna Dohna,Steamdeck,On hold
@@ -31,13 +32,13 @@ Digimon Cyber Sleuth: Hackers Memory,Switch,On hold
 Inscryption,Steamdeck,On hold
 Nier automata,Steamdeck,On hold
 Megaman Battle Network 2,Gameboy Advance,On hold
+13 Sentinels: Aegis Rim,Switch,To do
 Resonance of Fate,Steamdeck,To do
 Utawarerumono: Mask of deception,Steamdeck,To do
 Romancing SaGa: Minstrel Song,PS2/Steamdeck,To do
 Romancing SaGa 2,Switch,To do
 Romancing SaGa 3,Switch,To do
 SaGa Scarlet Grace,Switch,To do
-Unlimited SaGa,PS2,To do
 SaGa Frontier,PS1,To do
 SaGa Frontier 2,PS1,To do
 Suikoden,PS1,To do
@@ -52,7 +53,6 @@ Ni no Kuni,Switch,To do
 Valkyria Chronicles 4,Switch,To do
 Triangle Strategy,Switch,To do
 Dragon Quest XI,Switch,To do
-13 Sentinels: Aegis Rim,Switch,To do
 God Eater 3,Switch,To do
 Mary Skelter 2,Switch,To do
 Langrisser 1&2,Steamdeck,To do
@@ -87,13 +87,13 @@ Final Fantasy Tactics: War of the Lions,PSP,To do`;
 
 const csvmodelkits = `
 Model,Manufacturer,Status
-Alteisen,Bandai,In progress
 30Min Sister: Tiasha,Bandai,In progress
 Omnimon Amplified,Bandai,In progress
-MechatroWeGo Cream Soda & Crystal Gold,Hasegawa,In progress
-MechatroWeGo Asuka,Hasegawa,In progress
+MechatroWeGo Cream Soda & Crystal Gold,Haseegawa,In progress
+MechatroWeGo Asuka,Hasegawa,To do
 RG EVA01,Bandai,To do
-Dukemon Amplified,Bandai,To do`;
+Dukemon Amplified,Bandai,To do
+Sol Strike Raptor,Kotobukiya,To do`;
 
 function csvToTable(csv) {
     const rows = csv.split('\n');
@@ -117,7 +117,9 @@ function csvToTable(csv) {
 const table2 = csvToTable(csvbooks);
 const table3 = csvToTable(csvgames);
 const table4 = csvToTable(csvmodelkits);
+/* const table5 = csvToTable(csvwishlist); */
 
 document.getElementById('booksbacklog').innerHTML = table2;
 document.getElementById('gamesbacklog').innerHTML = table3;
 document.getElementById('modelkitsbacklog').innerHTML = table4;
+/* document.getElementById('wishlist').innerHTML = table5; */
