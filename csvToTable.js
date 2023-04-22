@@ -1,89 +1,94 @@
-/* const csvwishlist = ``; */
+
 
 const csvbooks = `
 Title,Author,Status
 Mo Dao Zu Shi 1,Mo Xiang Xiu, In progress
+The Design of Everyday Things,Don Norman,In progress
 Mo Dao Zu Shi 2,Mo Xiang Xiu, To do
 Mo Dao Zu Shi 3,Mo Xiang Xiu, To do`;
 
 const csvgames = `
-Title,Platform,Status
-Xenoblade Chronicles 3,Switch,In progress
-Atelier Escha & Logy,Steamdeck,In progress
-Monster Hunter Rise: Sunbreak,Switch,In progress
-Advance wars,Gameboy Advance,In Progress
-Like a dragon: Ishin!,Steamdeck,In Progress
-Trials of Mana,Steamdeck,To do
-Sengoku Rance,Steamdeck,To do
-Dohna Dohna,Steamdeck,To do
-Eiyuu Senki Gold,Steamdeck,To do
-Utawarerumono: Prelude of the fallen,Steamdeck,To do
-Fire Emblem: Three Houses,Switch,To do
-Final Fantasy XV: Royal Edition,Steamdeck,To do
-Tales of Arise,Steamdeck,To do
-Ys VIII: Lacrimosa of Dana,Switch,To do
-Yakuza 0,Steamdeck,To do
-Persona 5,Steamdeck,To do
-Trails from Zero,Switch,To do
-NEO: The World Ends With You,Switch,To do
-Cyberpunk 2077,Steamdeck,To do
-Shin Megami Tensei V,Switch,To do
-Digimon Cyber Sleuth: Hackers Memory,Switch,To do
-Inscryption,Steamdeck,To do
-Nier automata,Steamdeck,To do
-Megaman Battle Network 2,Gameboy Advance,To do
-13 Sentinels: Aegis Rim,Switch,To do
-Resonance of Fate,Steamdeck,To do
-Utawarerumono: Mask of deception,Steamdeck,To do
-Romancing SaGa: Minstrel Song,PS2/Steamdeck,To do
-Romancing SaGa 2,Switch,To do
-Romancing SaGa 3,Switch,To do
-SaGa Scarlet Grace,Switch,To do
-SaGa Frontier,PS1,To do
-SaGa Frontier 2,PS1,To do
-Suikoden,PS1,To do
-Suikoden 2,PS1,To do
-Xenogears,PS1,To do
-Ace Attorney Trilogy,Switch,To do
-Shining Resonance,Switch,To do
-Star Ocean First Departure R,Switch,To do
-God Wars,Switch,To do
-World of Final Fantasy,Switch,To do
-Ni no Kuni,Switch,To do
-Valkyria Chronicles 4,Switch,To do
-Triangle Strategy,Switch,To do
-Dragon Quest XI,Switch,To do
-God Eater 3,Switch,To do
-Mary Skelter 2,Switch,To do
-Langrisser 1&2,Steamdeck,To do
-Yakuza Kiwami,Steamdeck,To do
-The Last Remnant,Steamdeck,To do
-Metal Gear Solid V,Steamdeck,To do
-Hellblade: Senua's Sacrifice,Steamdeck,To do
-Oneshot,Steamdeck,To do
-Fate Stay Night,Steamdeck,To do
-Graveyard Keeper,Steamdeck,To do
-Metal Gear Rising: Revengeance,Steamdeck,To do
-Baroque,PS2,To do
-Shadow Hearts,PS2,To do
-Shadow Hearts Covenant,PS2,To do
-Tales of Symphonia,Gamecube/Steamdeck,To do
-Baten Kaitos,Gamecube,To do
-Breath of Fire IV,PS1,To do
-Final Fantasy VI,SNES/Gameboy Advance,To do
-Final Fantasy VIII,PS1,To do
-Legend of Dragoon,PS1,To do
-Shin Megami Tensei: if,SNES,To do
-Threads of Fate,PS1,To do
-Atelier Marie+Ellie,PS2,To do
-Tales of Legendia,PS2,To do
-Tales of Abyss,PS2,To do
-Persona 1,PSP,To do
-Persona 2: Innocent Sin,PSP,To do
-Persona 2: Eternal Punishment,PSP,To do
-Tactics Ogre: Let Us Cling Together,PSP/Switch,To do
-Valkyria Chronicles 2,PSP,To do
-Final Fantasy Tactics: War of the Lions,PSP,To do`;
+Title,Platform,Status, HLTB
+Xenoblade Chronicles 3,Switch,In progress,61
+Atelier Escha & Logy,Steamdeck,In progress,30
+Monster Hunter Rise: Sunbreak,Switch,In progress,31
+Advance wars,Gameboy Advance,In Progress,15
+Like a dragon: Ishin!,Steamdeck,In Progress,23
+Megaman Battle Network 2,Gameboy Advance,In Progress,?
+Trials of Mana,Steamdeck,To do,20
+Utawarerumono: Prelude of the fallen,Steamdeck,To do,31
+Trails from Zero,Switch,To do,41
+Fire Emblem: Three Houses,Switch,To do,49
+Tales of Arise,Steamdeck,To do,40
+Ys VIII: Lacrimosa of Dana,Switch,To do,37
+Ys IX: Monstrum Nox,Steamdeck,To do,27
+Yakuza 0,Steamdeck,To do,31
+Persona 5,Steamdeck,To do,98
+NEO: The World Ends With You,Switch,To do,40
+Cyberpunk 2077,Steamdeck,To do,25
+Shin Megami Tensei V,Switch,To do,45
+Digimon Cyber Sleuth: Hackers Memory,Switch,To do,46
+Inscryption,Steamdeck,To do,13
+Nier automata,Steamdeck,To do,40
+13 Sentinels: Aegis Rim,Switch,To do,31
+Resonance of Fate,Steamdeck,To do,52
+Utawarerumono: Mask of deception,Steamdeck,To do,31
+Romancing SaGa: Minstrel Song,PS2/Steamdeck,To do,26
+Romancing SaGa 2,Switch,To do,40
+Romancing SaGa 3,Switch,To do,24
+SaGa Scarlet Grace,Switch,To do,65
+SaGa Frontier,PS1,To do,16
+SaGa Frontier 2,PS1,To do,31
+Suikoden,PS1,To do,25
+Suikoden 2,PS1,To do,40
+Xenogears,PS1,To do,56
+Ace Attorney Trilogy,Switch,To do,66
+Shining Resonance,Switch,To do,31
+Star Ocean First Departure R,Switch,To do,21
+God Wars,Switch,To do,40
+World of Final Fantasy,Switch,To do,40
+Ni no Kuni,Switch,To do,45
+Valkyria Chronicles 4,Switch,To do,40
+Triangle Strategy,Switch,To do,35
+Dragon Quest XI,Switch,To do,60
+God Eater 3,Switch,To do,24
+Mary Skelter 2,Switch,To do,70
+Langrisser 1&2,Steamdeck,To do,20
+Yakuza Kiwami,Steamdeck,To do,18
+The Last Remnant,Steamdeck,To do,80
+Fate Stay Night,Steamdeck,To do,80
+Graveyard Keeper,Steamdeck,To do,45
+Metal Gear Rising: Revengeance,Steamdeck,To do,7
+Baroque,PS2,To do,13
+Shadow Hearts,PS2,To do,31
+Shadow Hearts Covenant,PS2,To do,52
+Tales of Symphonia,Gamecube,To do,65
+Baten Kaitos,Gamecube,To do,60
+Breath of Fire I,GBA,To do,28
+Breath of Fire II,GBA,To do,40
+Breath of Fire III,PS1,To do,48
+Breath of Fire IV,PS1,To do,44
+Final Fantasy VI,SNES/Gameboy Advance,To do,41
+Final Fantasy VIII,PS1,To do,55
+Legend of Dragoon,PS1,To do,58
+Shin Megami Tensei: if,SNES,To do,30
+Threads of Fate,PS1,To do,23
+Atelier Marie+Ellie,PS2,To do,30
+Tales of Legendia,PS2,To do,56
+Tales of Abyss,PS2,To do,63
+Persona 1,PSP,To do,50
+Persona 2: Innocent Sin,PSP,To do,49
+Persona 2: Eternal Punishment,PSP,To do,68
+Tactics Ogre: Reborn,Switch,Wishlist,88
+Valkyria Chronicles 2,PSP,To do,62
+Final Fantasy Tactics: War of the Lions,PSP,To do,60
+Fire Emblem Three Hopes,Switch,Wishlist,56
+Trails to Azure,Switch,Wishlist,70
+GrimGrimoire,Switch,Wishlist,20
+Undernauts: Labyrinth of Yomi,Switch,Wishlist,50
+Metroid Prime Remastered,Switch,Wishlist,16
+Zanki Zero,Steamdeck,Wishlist,50`;
+
 
 const csvmodelkits = `
 Model,Manufacturer,Status
@@ -117,9 +122,7 @@ function csvToTable(csv) {
 const table2 = csvToTable(csvbooks);
 const table3 = csvToTable(csvgames);
 const table4 = csvToTable(csvmodelkits);
-/* const table5 = csvToTable(csvwishlist); */
 
 document.getElementById('booksbacklog').innerHTML = table2;
 document.getElementById('gamesbacklog').innerHTML = table3;
 document.getElementById('modelkitsbacklog').innerHTML = table4;
-/* document.getElementById('wishlist').innerHTML = table5; */
