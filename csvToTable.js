@@ -12,26 +12,26 @@ Xenoblade Chronicles 3,Switch,In progress
 Atelier Escha & Logy,Steamdeck,In progress
 Monster Hunter Rise: Sunbreak,Switch,In progress
 Advance wars,Gameboy Advance,In Progress
-Trials of Mana,Steamdeck,On hold
-Sengoku Rance,Steamdeck,On hold
-Dohna Dohna,Steamdeck,On hold
-Eiyuu Senki Gold,Steamdeck,On hold
-Utawarerumono: Prelude of the fallen,Steamdeck,On hold
-Fire Emblem: Three Houses,Switch,On hold
-Like a dragon: Ishin!,Steamdeck,On hold
-Final Fantasy XV: Royal Edition,Steamdeck,On hold
-Tales of Arise,Steamdeck,On hold
-Ys VIII: Lacrimosa of Dana,Switch,On hold
-Yakuza 0,Steamdeck,On hold
-Persona 5,Steamdeck,On hold
-Trails from Zero,Switch,On hold
-NEO: The World Ends With You,Switch,On hold
-Cyberpunk 2077,Steamdeck,On hold
-Shin Megami Tensei V,Switch,On hold
-Digimon Cyber Sleuth: Hackers Memory,Switch,On hold
-Inscryption,Steamdeck,On hold
-Nier automata,Steamdeck,On hold
-Megaman Battle Network 2,Gameboy Advance,On hold
+Like a dragon: Ishin!,Steamdeck,In Progress
+Trials of Mana,Steamdeck,To do
+Sengoku Rance,Steamdeck,To do
+Dohna Dohna,Steamdeck,To do
+Eiyuu Senki Gold,Steamdeck,To do
+Utawarerumono: Prelude of the fallen,Steamdeck,To do
+Fire Emblem: Three Houses,Switch,To do
+Final Fantasy XV: Royal Edition,Steamdeck,To do
+Tales of Arise,Steamdeck,To do
+Ys VIII: Lacrimosa of Dana,Switch,To do
+Yakuza 0,Steamdeck,To do
+Persona 5,Steamdeck,To do
+Trails from Zero,Switch,To do
+NEO: The World Ends With You,Switch,To do
+Cyberpunk 2077,Steamdeck,To do
+Shin Megami Tensei V,Switch,To do
+Digimon Cyber Sleuth: Hackers Memory,Switch,To do
+Inscryption,Steamdeck,To do
+Nier automata,Steamdeck,To do
+Megaman Battle Network 2,Gameboy Advance,To do
 13 Sentinels: Aegis Rim,Switch,To do
 Resonance of Fate,Steamdeck,To do
 Utawarerumono: Mask of deception,Steamdeck,To do
