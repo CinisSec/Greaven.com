@@ -1,21 +1,27 @@
 
 
 const csvbooks = `
-Title,Author,Status
-Mo Dao Zu Shi 1,Mo Xiang Xiu, In progress
-The Design of Everyday Things,Don Norman,In progress
-Mo Dao Zu Shi 2,Mo Xiang Xiu, To do
-Mo Dao Zu Shi 3,Mo Xiang Xiu, To do`;
+Title,Author,Category,Status
+Mo Dao Zu Shi 1,Mo Xiang Xiu,Fiction Book, In progress
+The Design of Everyday Things,Don Norman,UX/UI Book,In progress
+Mo Dao Zu Shi 2,Mo Xiang Xiu,Fiction Book,To do
+Mo Dao Zu Shi 3,Mo Xiang Xiu,Fiction Book,To do
+Vagabond 1,Takehiko Inoue,Fiction Manga,To do
+Vagabond 2,Takehiko Inoue,Fiction Manga,To do
+Vagabond 3,Takehiko Inoue,Fiction Manga,To do`;
 
 const csvgames = `
 Title,Platform,Status, HLTB
+Like a dragon: Ishin!,Steamdeck,In Progress,23
 Xenoblade Chronicles 3,Switch,In progress,61
+Xenoblade Chronicles X,Wii U,In Progress,108
+Romancing SaGa: Minstrel Song,Steamdeck,To do,26
 Atelier Escha & Logy,Steamdeck,In progress,30
 Monster Hunter Rise: Sunbreak,Switch,In progress,31
 Advance wars,Gameboy Advance,In Progress,15
-Like a dragon: Ishin!,Steamdeck,In Progress,23
 Megaman Battle Network 2,Gameboy Advance,In Progress,?
 Trials of Mana,Steamdeck,To do,20
+Tactics Ogre: Reborn,Switch,To do,88
 Utawarerumono: Prelude of the fallen,Steamdeck,To do,31
 Trails from Zero,Switch,To do,41
 Fire Emblem: Three Houses,Switch,To do,49
@@ -33,7 +39,7 @@ Nier automata,Steamdeck,To do,40
 13 Sentinels: Aegis Rim,Switch,To do,31
 Resonance of Fate,Steamdeck,To do,52
 Utawarerumono: Mask of deception,Steamdeck,To do,31
-Romancing SaGa: Minstrel Song,PS2/Steamdeck,To do,26
+Romancing SaGa: Minstrel Song,Steamdeck,To do,26
 Romancing SaGa 2,Switch,To do,40
 Romancing SaGa 3,Switch,To do,24
 SaGa Scarlet Grace,Switch,To do,65
@@ -79,7 +85,6 @@ Tales of Abyss,PS2,To do,63
 Persona 1,PSP,To do,50
 Persona 2: Innocent Sin,PSP,To do,49
 Persona 2: Eternal Punishment,PSP,To do,68
-Tactics Ogre: Reborn,Switch,Wishlist,88
 Valkyria Chronicles 2,PSP,To do,62
 Final Fantasy Tactics: War of the Lions,PSP,To do,60
 Fire Emblem Three Hopes,Switch,Wishlist,56
@@ -87,7 +92,8 @@ Trails to Azure,Switch,Wishlist,70
 GrimGrimoire,Switch,Wishlist,20
 Undernauts: Labyrinth of Yomi,Switch,Wishlist,50
 Metroid Prime Remastered,Switch,Wishlist,16
-Zanki Zero,Steamdeck,Wishlist,50`;
+Zanki Zero,Steamdeck,To do,50
+The Vagrant,Steamdeck,To do,12`;
 
 
 const csvmodelkits = `
