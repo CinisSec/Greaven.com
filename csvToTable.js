@@ -3,7 +3,6 @@
 const csvbooks = `
 Title,Author,Category,Status
 Mo Dao Zu Shi 1,Mo Xiang Xiu,Fiction Book, In progress
-The Design of Everyday Things,Don Norman,UX/UI Book,In progress
 Mo Dao Zu Shi 2,Mo Xiang Xiu,Fiction Book,To do
 Mo Dao Zu Shi 3,Mo Xiang Xiu,Fiction Book,To do
 Vagabond 1,Takehiko Inoue,Fiction Manga,To do
@@ -18,8 +17,6 @@ Xenoblade Chronicles X,Wii U,In Progress,108
 Romancing SaGa: Minstrel Song,Steamdeck,To do,26
 Atelier Escha & Logy,Steamdeck,In progress,30
 Monster Hunter Rise: Sunbreak,Switch,In progress,31
-Advance wars,Gameboy Advance,In Progress,15
-Megaman Battle Network 2,Gameboy Advance,In Progress,?
 Trials of Mana,Steamdeck,To do,20
 Tactics Ogre: Reborn,Switch,To do,88
 Utawarerumono: Prelude of the fallen,Steamdeck,To do,31
@@ -99,7 +96,6 @@ The Vagrant,Steamdeck,To do,12`;
 const csvmodelkits = `
 Model,Manufacturer,Status
 30Min Sister: Tiasha,Bandai,In progress
-Omnimon Amplified,Bandai,In progress
 MechatroWeGo Cream Soda & Crystal Gold,Haseegawa,In progress
 MechatroWeGo Asuka,Hasegawa,To do
 RG EVA01,Bandai,To do
