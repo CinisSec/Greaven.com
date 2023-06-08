@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>AragamiSoft</title>
+</head>
+<link href="../../style.css" rel="stylesheet">
+
+<body>
+    <div id="menubar">
+        <a href="../../index.html">Home</a>
+        -
+        <a href="../../blog.html">Blog</a>
+        -
+        <a href="../../backlog.html">Backlog</a>
+        -
+        <a href="../../cv.html">CV</a>
+        -
+        <a href="https://github.com/CinisSec" target="_blank">Github</a>
+    </div>
+    <div id="body">
+        <div id="blogpost-4" class="blogpost">
+            <h3>Format and partition a drive on Linux Part 2</h3>
+            <h5>07-04-2023</h5>
+            <p class="blogpost-text">
+                As I've been using linux workstations more frequently I realized my previous blogpost was only applicable if you need to use the disk on other non linux systems. <br>
+                If you only want to use the disk on Linux systems you can just do the following:
+                <code>mkfs.ext4 /dev/sdx -L mylabel</code>
+                Instead of partitioning the disk you'll just make a filesystem on sdx. <br>
+                The next step would be to just mount sdx and there you go! <br>
+
+            I hope this helped!<br>
+            <br>
+            xoxo<br>
+            Grey
+            </p>
+        </div>
+    </div>
+    <div id="bottombar">
+        <div id="support">
+            <div>
+                <b>Support me</b><br>
+                <img src="../../qr.png" style="height: 100px;width: 100px;"><br>
+                <a href="https://bunq.me/aragamisoft">bunq.me/aragamisoft</a>
+            </div>
+        </div>
+    </div>
+</body>
