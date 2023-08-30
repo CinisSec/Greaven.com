@@ -11,17 +11,17 @@ Vagabond 3,Takehiko Inoue,Fiction Manga,To do`;
 
 const csvgames = `
 Title,Platform,Status, HLTB
-Like a dragon: Ishin!,Steamdeck,In Progress,23
+Armored Core VI,Steamdeck,In Progress,30
+Baldur's Gate III,Steamdeck,In Progress,120
 Xenoblade Chronicles 3,Switch,In progress,61
-Xenoblade Chronicles X,Wii U,In Progress,108
-Romancing SaGa: Minstrel Song,Steamdeck,To do,26
+Romancing SaGa: Minstrel Song,Steamdeck,In Progress,26
 Atelier Escha & Logy,Steamdeck,In progress,30
 Monster Hunter Rise: Sunbreak,Switch,In progress,31
-Trials of Mana,Steamdeck,To do,20
+Trials of Mana,Steamdeck,In Progress,20
 Tactics Ogre: Reborn,Switch,To do,88
 Utawarerumono: Prelude of the fallen,Steamdeck,To do,31
 Trails from Zero,Switch,To do,41
-Fire Emblem: Three Houses,Switch,To do,49
+Fire Emblem: Three Houses,Switch,In Progress,49
 Tales of Arise,Steamdeck,To do,40
 Ys VIII: Lacrimosa of Dana,Switch,To do,37
 Ys IX: Monstrum Nox,Steamdeck,To do,27
@@ -96,7 +96,7 @@ The Vagrant,Steamdeck,To do,12`;
 const csvmodelkits = `
 Model,Manufacturer,Status
 30Min Sister: Tiasha,Bandai,In progress
-MechatroWeGo Cream Soda & Crystal Gold,Haseegawa,In progress
+MechatroWeGo Cream Soda & Crystal Gold,Hasegawa,In progress
 MechatroWeGo Asuka,Hasegawa,To do
 RG EVA01,Bandai,To do
 Dukemon Amplified,Bandai,To do
