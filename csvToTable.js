@@ -84,9 +84,9 @@ function csvToTable(csv) {
 }
 
 const table2 = csvToTable(csvbooks);
-const table3 = csvToTable(csvgames);
+//const table3 = csvToTable(csvgames);
 const table4 = csvToTable(csvmodelkits);
 
 document.getElementById('booksbacklog').innerHTML = table2;
-document.getElementById('gamesbacklog').innerHTML = table3;
+// document.getElementById('gamesbacklog').innerHTML = table3;
 document.getElementById('modelkitsbacklog').innerHTML = table4;
