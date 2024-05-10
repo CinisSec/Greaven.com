@@ -3,8 +3,6 @@
 const csvbooks = `
 Title,Author,Category,Status
 Mo Dao Zu Shi 1,Mo Xiang Xiu,Fiction Book, In progress
-Mo Dao Zu Shi 2,Mo Xiang Xiu,Fiction Book,To do
-Mo Dao Zu Shi 3,Mo Xiang Xiu,Fiction Book,To do
 Vagabond 1,Takehiko Inoue,Manga,To do
 Vagabond 2,Takehiko Inoue,Manga,To do
 Vagabond 3,Takehiko Inoue,Manga,To do`;
@@ -12,7 +10,6 @@ Vagabond 3,Takehiko Inoue,Manga,To do`;
 const csvgames = `
 Title,Platform,Status, HLTB
 Armored Core VI,Steamdeck,In Progress,30
-Baldur's Gate III,Steamdeck,In Progress,120
 Xenoblade Chronicles 3,Switch,On hold,61
 Romancing SaGa: Minstrel Song,Steamdeck,In Progress,26
 Atelier Escha & Logy,Steamdeck,In progress,30
@@ -61,8 +58,7 @@ Model,Manufacturer,Status
 MechatroWeGo Cream Soda & Crystal Gold,Hasegawa,In progress
 MechatroWeGo Asuka,Hasegawa,To do
 RG EVA01,Bandai,To do
-Dukemon Amplified,Bandai,To do
-Sol Strike Raptor,Kotobukiya,To do`;
+Dukemon Amplified,Bandai,To do`;
 
 function csvToTable(csv) {
     const rows = csv.split('\n');
