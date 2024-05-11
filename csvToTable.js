@@ -60,6 +60,12 @@ MechatroWeGo Asuka,Hasegawa,To do
 RG EVA01,Bandai,To do
 Dukemon Amplified,Bandai,To do`;
 
+/**
+ * Converts a CSV string into an HTML table.
+ *
+ * @param {string} csv - The CSV string to be converted.
+ * @return {string} The HTML table representation of the CSV string.
+ */
 function csvToTable(csv) {
     const rows = csv.split('\n');
     let table = '<table class="sortable">\n';
