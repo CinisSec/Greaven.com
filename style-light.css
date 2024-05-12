@@ -2,7 +2,6 @@ body {
     overflow-y: scroll;
     max-width: max-content;
     margin:auto;
-    background-color: #141414;
     }
 
 #body {
@@ -28,14 +27,13 @@ body {
     border-left-style: solid;
     border-right-style: solid;
     border-width: 0.1px;
-    
-    border-color: whitesmoke;
+    border-color: black;
     padding: 10px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 360px;
-    background-color: black;
+    background-color: #f6f6f6;
 }
 .sortable {
     margin: 0 auto;
