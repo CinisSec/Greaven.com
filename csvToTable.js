@@ -3,6 +3,8 @@
 const csvbooks = `
 Title,Author,Category,Status
 Mo Dao Zu Shi 1,Mo Xiang Xiu,Fiction Book, In progress
+Romeo and Juliet,William Shakespeare,Fiction Book, In progress
+Sayonara Eri,Tatsuki Fujimoto,Manga,To do
 Vagabond 1,Takehiko Inoue,Manga,To do
 Vagabond 2,Takehiko Inoue,Manga,To do
 Vagabond 3,Takehiko Inoue,Manga,To do`;
@@ -87,8 +89,8 @@ function csvToTable(csv) {
 
 const table2 = csvToTable(csvbooks);
 //const table3 = csvToTable(csvgames);
-const table4 = csvToTable(csvmodelkits);
+//const table4 = csvToTable(csvmodelkits);
 
 document.getElementById('booksbacklog').innerHTML = table2;
 // document.getElementById('gamesbacklog').innerHTML = table3;
-document.getElementById('modelkitsbacklog').innerHTML = table4;
+//document.getElementById('modelkitsbacklog').innerHTML = table4;
