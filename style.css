@@ -6,15 +6,21 @@ body {
     }
 
 #body {
-    max-width: 360px;
+    max-width: 720px;
     padding-bottom: 10px;
     margin-top: 5px;
     margin-bottom: 20px;
     padding-left: 10px;
     padding: 20px;
-
-    
 }
+#body h3 {
+    color: rgb(231, 43, 47);
+}
+
+#banner {
+    text-align: center;
+}
+
 #title {
     padding-left: 5px;
     border-top-style: solid;
@@ -24,18 +30,19 @@ body {
     text-decoration: none;
 }
 #menubar a:hover {
-    color: #bd0000;
+    color: rgb(231, 43, 47);
 }
 #menubar {
     border-bottom-style: solid;
     border-left-style: solid;
     border-right-style: solid;
     border-color: #272727;
-    border-radius: 1px;
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     width: 360px;
     background-color: #242424;
 }
@@ -68,20 +75,6 @@ body {
 .content{
     padding-left: 5px;
     padding-right: 5px;
-}
-
-#support {
-    border-style: solid;
-    border-color: black;
-    text-align: center;
-    width: fit-content;
-    margin-top: 20px;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 2px;
-    max-width: max-content;
-    margin:auto;
 }
 code {
 
