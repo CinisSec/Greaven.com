@@ -34,7 +34,7 @@ body {
     text-decoration: none;
 }
 #menubar a:hover {
-    color: rgb(231, 43, 47);
+    color: color(display-p3 0.831 0.247 0.224);
 }
 #menubar {
     border-bottom-style: solid;
@@ -73,7 +73,7 @@ body {
     padding-right: 20px;
 }
 .blogpost a {
-    color: #bd0000;
+    color: color(display-p3 0.831 0.247 0.224);
 }
 
 .content{
