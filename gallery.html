@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Greaven - Home</title>
+	<meta name="google-site-verification" content="ZDP6oXNbLUU5oaINSHQbU3I4sYKGjwEAXke0NqVvSvA" />
+</head>
+<script src="scripts/magnify.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<body>
+	<div id="banner">
+		<img src="images/logo.png" width="100px">
+	</div>
+
+	<div id="menubar">
+		<a href="index.html">Home</a>
+		-
+		<a href="blog.html">Blog</a>
+		-
+		<a href="gallery.html">Gallery</a>
+		-
+		<a href="https://github.com/CinisSec" target="_blank">Github</a>
+	</div>
+	
+	<div id="body">
+		
+		<div class="gallery">
+			<div class="gallery-item small" onclick="magnify(this)"><img src="images/pictures/coalhook2024.jpeg" data-caption="Coal hook made during the beginner workshop in December 2024 with Stichting Ijzerhart in The Netherlands" ></div>		
+			<!-- <div class="gallery-item small" onclick="magnify(this)"><img src="images/pictures/" data-caption=""></div>		-->
+			<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/leidsontzet2024.jpeg" data-caption="Sundown during the festivities of Leids ontzet in Leiden 3 October 2024"></div>
+			<div class="gallery-item small" onclick="magnify(this)"><img src="images/pictures/HikingGermany2024.jpeg" data-caption="Hiking and camping trip in Germany 2024"></div>
+							
+			<!-- Zoomed Image Overlay -->
+			<div id="zoomBox" class="zoom-box" onclick="closeMagnify()">
+				<img id="zoomImg" src="" alt="Zoomed Image">
+				<p id="zoomCaption"></p> 
+			</div>
+		</div>
+		
+	</div>
+
+	<div id="bottombar">
+	</div>
+</body>
