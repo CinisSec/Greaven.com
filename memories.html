@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Greaven - Home</title>
+	<meta name="google-site-verification" content="ZDP6oXNbLUU5oaINSHQbU3I4sYKGjwEAXke0NqVvSvA" />
+</head>
+<script src="scripts/magnify.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<body>
+	<div id="banner">
+		<img src="images/logo.png" width="100px">
+	</div>
+
+	<div id="menubar">
+		<a href="index.html">Home</a>
+		-
+		<a href="blog.html">Blog</a>
+		-
+		<a href="memories.html">Memories</a>
+		-
+		<a href="https://github.com/CinisSec" target="_blank">Github</a>
+	</div>
+
+	<div id="body">
+		<div class="gallery-head" name="2024">2025</div>
+		<div class="gallery">
+			<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/delftDenHaag2025.jpeg" data-caption="Fields between Delft and The Hague. Route to De Uithof."></div>
+			<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/1stTrainTravel2025.jpeg" data-caption="First train travel 2025. Dubious lack of bike space."></div>
+		</div>
+		<div class="gallery-head" name="2024">2024</div>
+		<div class="gallery">
+			<!-- 	<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/" data-caption=""></div>						-->
+			<div class="gallery-item medium" onclick="magnify(this)">
+				<img src="images/pictures/coalhook2024.jpeg" data-caption="Coal hook made during the beginner workshop in December 2024 with Ijzerhart.">
+			</div>
+			<div class="gallery-item large" onclick="magnify(this)"><img src="images/pictures/HikingGermany2024.jpeg" data-caption="Hiking and camping trip in Germany 2024."></div>
+			<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/theHaguePark2024.jpeg" data-caption="The Hague near Central Station"></div>
+			<!-- Empty for shaping-->
+			<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/GBColorMod2024.jpeg" data-caption="Game Boy Color screen, speaker and shell mod. (Screen: Laminated FunnyPlaying GBC)"></div>
+			<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/delftUtrecht2024.jpeg" data-caption="Arrival at Utrecht from Delft. First 80km by bike."></div>
+			<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/bridgeDelftTour2024.jpeg" data-caption="View from the bridge on the Delft Nature Tour."></div>
+			<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/leidsontzet2024.jpeg" data-caption="Sundown during the festivities of Leids ontzet in Leiden 3 October 2024."></div>
+			<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/Lynks2024.jpeg" data-caption="Lynks concert at the Tolhuistuin in Amsterdam"></div>
+			<div class="gallery-item medium" onclick="magnify(this)"><img src="images/pictures/Skateboard2024.jpeg" data-caption="First real skateboard"></div>
+				
+			<!-- Zoomed Image Overlay -->
+			<div id="zoomBox" class="zoom-box" onclick="closeMagnify()">
+				<img id="zoomImg" src="" alt="Zoomed Image">
+				<p id="zoomCaption"></p>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="bottombar">
+	</div>
+</body>
